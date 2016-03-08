@@ -1,0 +1,7 @@
+/_server/vendor
+composer.lock
+composer.phar
+*.log
+*~
+*.swp
+._*

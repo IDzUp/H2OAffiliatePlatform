@@ -1,0 +1,1 @@
+SELECT lang FROM [DB_PREFIX][TABLE] WHERE profileId = :profile_id LIMIT 1;

@@ -1,0 +1,1 @@
+UPDATE [PREFIX]Affiliate SET refer = refer+1 WHERE profileId = :profile_id;

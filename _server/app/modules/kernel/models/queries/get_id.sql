@@ -1,0 +1,1 @@
+SELECT profileId FROM [DB_PREFIX][TABLE] WHERE email = :email LIMIT 1;

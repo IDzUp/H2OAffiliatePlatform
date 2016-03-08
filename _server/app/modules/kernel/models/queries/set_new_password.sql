@@ -1,0 +1,1 @@
+UPDATE [DB_PREFIX][TABLE] SET password = :password WHERE email = :email LIMIT 1;

@@ -1,0 +1,27 @@
+{
+    "name": "h2o/h2ogame",
+    "description": "Professional Dating Affiliate Platform",
+    "keywords": ["Web business builder","CMS","affiliate","white label"],
+    "type": "project",
+    "homepage": "http://idzup.com",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Pierre-Henry Soria",
+            "email": "phy@hizup.uk",
+            "homepage": "http://about.ph7.me",
+            "role": "Senior Software Engineer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "_server/vendor",
+        "bin-dir": "_server/vendor/bin",
+        "cache-dir": "_server/vendor/cache",
+        "autoloader-suffix": "H2O"
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "stripe/stripe-php": "^3.9",
+        "khill/lavacharts": "~3.0"
+    }
+}
