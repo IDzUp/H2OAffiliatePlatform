@@ -26,13 +26,13 @@ class ForgotPasswordProcessForm extends Controller
         $aParams = [
             'to' => $sEmail,
             'subject' => trans('New Password'),
-            'body' => '<p>Hi there!</p>' . 
+            'body' => '<p>Hi there!</p>' .
             '<p>' . trans('We received a new request to change your password. Your new password is %0%.', $sNewPassword) . '</p>' .
             '<p>' . trans('For security amd memorisation reason, please change your password to a new one once logged in in your account.') . '</p>' .
             '<p>' . trans('Kind regards,') . '</p>' .
             '<p>' . trans('The %0% team.', Application::SOFTWARE_NAME) . '</p>'
         ];
-        
+
         send_mail($aParams);
     }
 

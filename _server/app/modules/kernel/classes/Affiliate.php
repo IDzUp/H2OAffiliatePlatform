@@ -69,6 +69,6 @@ class Affiliate
         $oSession->destroy();
         redirect('?m=affiliate&a=login', (!$mOverrideMsg ? trans('You have been successfully logged out') : $mOverrideMsg) ); // Redirect the admin to the login page
     }
-    
+
 }
 

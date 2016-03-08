@@ -21,8 +21,8 @@ class MainController extends Controller
 
     public function index()
     {
-    	$this->oView->sTitle = Config::SITE_NAME;
-    	$this->oView->sH2Title = trans('Dating Affiliate System');
+        $this->oView->sTitle = Config::SITE_NAME;
+        $this->oView->sH2Title = trans('Dating Affiliate System');
         $this->display();
     }
 

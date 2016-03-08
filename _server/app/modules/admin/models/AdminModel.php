@@ -17,7 +17,7 @@ class AdminModel extends KernelModel
     public function __construct()
     {
         parent::__construct(self::ADMIN_TABLE);
-        
+
         $this->_sQueryPath = __DIR__ . H2O_DS . 'queries/';
     }
 

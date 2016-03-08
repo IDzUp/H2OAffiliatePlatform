@@ -14,8 +14,8 @@ require H2O_SERVER_PATH . 'library/PFBC/Form.php';
 // Autoloading Classes Files
 spl_autoload_register(function($sClass)
 {
-	// Include Composer's autoloader
-	require_once H2O_SERVER_PATH . 'vendor/autoload.php';
+    // Include Composer's autoloader
+    require_once H2O_SERVER_PATH . 'vendor/autoload.php';
 
     // Hack to remove namespace and backslash
     $sClass = str_replace(array(__NAMESPACE__ . '\\', '\\'), '/', $sClass);

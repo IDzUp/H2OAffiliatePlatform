@@ -3,7 +3,7 @@
 
 ## Overview
 
-**H2O Affiliate Platform** is an ideal affiliate platform for dating affiliate promotion sites, 
+**H2O Affiliate Platform** is an ideal affiliate platform for dating affiliate promotion sites,
 
 Ideal when you create a lot of white label dating sites like the SCALE and FRANSHISE **[Dating Business Model](http://ph7cms.com/dating-business-by-steps/)**.
 
@@ -19,6 +19,10 @@ Ideal when you create a lot of white label dating sites like the SCALE and FRANS
 **Database** MySQL/MariaDb 5 or higher with InnoDB table support.
 
 **PHP Extensions** "PDO extension", "mbstring PHP module", "file_uploads = On", "post_max_size = 100M or higher", "upload_max_filesize = 100M or higher".
+
+## Development Stage
+
+The project of this dating affiliate network is still in development, but contributions to this project are truly welcome! Simply *Clone It*, *Improve* and then *Push your changes*.
 
 
 ## Author
