@@ -32,15 +32,17 @@ class Affiliate
      */
     public function addRefer($iId)
     {
+        $sCookieName = 'pHSAff';
         $oCookie = new Cookie;
-        if (!$oCookie->exists(static::COOKIE_NAME))
+
+        if (!$oCookie->exists($sCookieName))
         {
-            $this->set('pHSAff', $iAffId, 3600*24*7); // Set a week
+            $oCookie->set($sCookieName, $iId, 3600*24*7); // Set a week
             (new AffiliateModel)->exe(['profile_id' => $iId], 'add_refer'); // Add a reference only for new clicks (if the cookie doesn't exist)
         }
         else
         {
-            $this->set('pHSAff', $iAffId, 3600*24*7); // Set a weekek
+            $oCookie->set($sCookieName, $iId, 3600*24*7); // Set a weekek
         }
         unset($oCookie);
     }

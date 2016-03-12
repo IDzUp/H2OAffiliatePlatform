@@ -41,21 +41,20 @@ class MainController extends Controller
 
     public function login()
     {
-        $this->sTitle = trans('Login - Affiliate');
-        $this->oView->sTitle = $this->oView->sH2Title = $this->sTitle;
+        $this->oView->sTitle = $this->oView->sH2Title = trans('Login - Affiliate');
 
         $this->display();
     }
 
     public function forgot()
     {
-        $this->oView->sH2Title = trans('Forgot your Password?');
+        $this->oView->sTitle = $this->oView->sH2Title = trans('Forgot your Password?');
         $this->display();
     }
 
     public function password()
     {
-        $this->oView->sH2Title = trans('Change your Password');
+        $this->oView->sTitle = $this->oView->sH2Title = trans('Change your Password');
         $this->display();
     }
 

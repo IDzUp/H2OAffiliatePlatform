@@ -28,7 +28,7 @@ class RegistrationForm
         $oForm->addElement(new \PFBC\Element\Email(trans('Email'), 'email', ['required' => 1]));
         $oForm->addElement(new \PFBC\Element\Password(trans('Password'), 'password1', ['required' => 1]));
         $oForm->addElement(new \PFBC\Element\Password(trans('Repeat Password'), 'password2', ['required' => 1]));
-        $oForm->addElement(new \PFBC\Element\Email(trans('Company Name (if you are a company)'), 'company_name'));
+        $oForm->addElement(new \PFBC\Element\Textbox(trans('Company Name (if you are a company)'), 'company_name'));
         $oForm->addElement(new \PFBC\Element\Button(trans('Submit')));
 
         $oForm->render();

@@ -49,6 +49,16 @@ class KernelModel extends Model
         return Security::checkPwd($sPassword, @$oRow->password);
     }
 
+    public function resetPassword($sEmail, $sPassword)
+    {
+        $this->sSql = $this->getQuery('set_new_password', $this->sQueryPath);
+        $this->replaceTable();
+        $rStmt = $this->oDb->prepare($this->sSql);
+        $rStmt->bindValue(':email', $sEmail);
+        $rStmt->bindValue(':password', $sPassword);
+        return $rStmt->execute();
+    }
+
     public function readProfile($iId)
     {
         $iId = (int) $iId;

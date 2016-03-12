@@ -14,7 +14,7 @@ class AffiliateModel extends KernelModel
 
     public function __construct()
     {
-        parent::__construct(self::ADMIN_TABLE);
+        parent::__construct(self::AFF_TABLE);
     }
 
 }

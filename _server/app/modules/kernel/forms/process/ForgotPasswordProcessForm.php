@@ -19,8 +19,7 @@ class ForgotPasswordProcessForm extends Controller
         $sEmail = $this->oHttpRequest->post('email');
         $sNewPassword = mt_rand(5,15);
 
-        $aData = ['email' => $sEmail, 'password' => Security::hashPwd($sNewPassword)];
-        (new KernelModel(KernelModel::AFF_TABLE))->exe($aData, 'set_new_password');
+        (new AffiliateModel)->resetPassword($sEmail, $sNewPassword);
 
         /*** Send an email containing the new password... ***/
         $aParams = [
@@ -34,6 +33,8 @@ class ForgotPasswordProcessForm extends Controller
         ];
 
         send_mail($aParams);
+
+        \PFBC\Form::setSuccess('forgot_password_form', trans('We sent a new password to your emailbox!'));
     }
 
 }
