@@ -12,7 +12,7 @@ defined('H2O') or exit('Access denied');
 class ForgotPasswordProcessForm extends Controller
 {
 
-    public function __construct($sTable)
+    public function __construct()
     {
         parent::__construct();
 

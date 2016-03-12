@@ -9,7 +9,8 @@
 namespace H2O;
 defined('H2O') or exit('Access denied');
 
-if (!Admin::auth() && Application::getControllerName() == 'admin')
+// If the affiliate is logged, don't show the homepage
+if (Affiliate::auth() && Application::getAction() === 'index')
 {
-    redirect('?m=admin&a=login');
+    redirect('?m=affiliate&a=index');
 }

@@ -12,12 +12,12 @@ defined('H2O') or exit('Access denied');
 class ForgotPasswordForm extends BaseForm
 {
 
-    public static function display($sTable)
+    public static function display()
     {
         if (isset($_POST['submit_forgot_password']))
         {
             if (\PFBC\Form::isValid($_POST['submit_forgot_password']))
-                new ForgotPasswordProcessForm($sTable);
+                new ForgotPasswordProcessForm;
 
             redirect('?m=affiliate&a=forgot');
         }

@@ -16,7 +16,7 @@ class LoginProcessForm extends Controller
     {
         parent::__construct();
 
-        $oAffModel = new AffiliateModel;
+        $oAffModel = new KernelModel;
         $sType = ($sMod == 'affiliate') ? 'aff' : $sMod;
 
         if ($oAffModel->login($this->oHttpRequest->post('email'), $this->oHttpRequest->post('password')))
