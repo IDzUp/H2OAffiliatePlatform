@@ -1,4 +1,5 @@
 /_server/vendor
+_server/library/Config.class.php
 composer.lock
 composer.phar
 *.log
