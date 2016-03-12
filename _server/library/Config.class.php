@@ -1,7 +1,7 @@
 <?php
 /**
  * @author           Pierre-Henry Soria <ph7software@gmail.com>
- * @copyright        (c) 2014, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2014-2016, Pierre-Henry Soria. All Rights Reserved.
  * @license          See H2O.LICENSE.txt and H2O.COPYRIGHT.txt in the root directory.
  * @link             http://hizup.com
  */
@@ -21,7 +21,7 @@ final class Config
     SITE_KEYWORDS = '',
 
     /*** AFFILIATE MEMBERSHIP: STRIPE ***/
-    AFFILIATE_MEMBERSHIP_PRICE = '700',
+    AFFILIATE_MEMBERSHIP_PRICE = '700', // Amount in cents (without points) to be validated for Stripe
     STRIPE_PUBLISH_KEY = '',
     STRIPE_SECRET_KEY = '',
 
