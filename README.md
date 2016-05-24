@@ -5,7 +5,9 @@
 
 **H2O Affiliate Platform** is an ideal affiliate platform for dating affiliate promotion sites,
 
-Ideal when you create a lot of white label dating sites like the SCALE and FRANSHISE **[Dating Business Model](http://ph7cms.com/dating-business-by-steps/)**.
+It's a simple, secure and fast Dating Affiliate Platform using H2O Framework (like H2OGame https://github.com/pH-7/H2OGame) coding on good practice on MVC pattern and with 100% code language seperation (PHP code only in PHP files, SQL only in SQL code, HTML code only in HTML files, CSS only in CSS files, JS code only in JS files)
+
+Ideal when you create a lot of white label dating sites like the SCALE and FRANSHISE **[Dating Business Model](http://ph7cms.com/dating-business-by-steps/) System**.
 
 
 ## Requirements
